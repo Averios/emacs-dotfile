@@ -11,6 +11,8 @@
 (require 'init-ui)
 (require 'init-editing)
 (require 'init-navigation)
+(require 'init-miscellaneous)
+(require 'init-company-mode)
 
 ;; Language support
 (require 'init-terraform)
