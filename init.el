@@ -13,6 +13,7 @@
 (require 'init-navigation)
 (require 'init-miscellaneous)
 (require 'init-company-mode)
+(require 'init-rust)
 
 ;; Language support
 (require 'init-terraform)
