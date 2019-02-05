@@ -17,6 +17,10 @@
 (global-hl-line-mode 1)
 ;; Auto pair parantheses
 (electric-pair-mode 1)
+;; Indent with spaces
+(setq-default indent-tabs-mode nil)
+;; Set indent width
+(setq tab-width 4)
 
 ;; Disable flycheck on init.el
 (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
