@@ -3,6 +3,7 @@
 (require 'ido)
 (require 'recentf)
 (require-package 'ido-completing-read+)
+(require-package 'ido-vertical-mode)
 (require-package 'smex)
 (require-package 'projectile)
 
@@ -12,10 +13,12 @@
 
 (ido-mode t)
 (ido-everywhere t)
+(ido-vertical-mode 1)
 (setq ido-enable-flex-matching t
       ido-use-filename-at-point nil
       ido-auto-merge-work-directories-length -1
-      ido-use-virtual-buffers t)
+      ido-use-virtual-buffers t
+      ido-vertical-define-keys 'C-n-and-C-p-only)
 
 (require 'ido-completing-read+)
 (ido-ubiquitous-mode 1)
