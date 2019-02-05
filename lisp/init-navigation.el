@@ -25,7 +25,7 @@
 
 ;; Shows list of buffers and switch
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-
+(global-set-key (kbd "C-x ,") 'projectile-find-file)
 
 (setq smex-save-file (concat user-emacs-directory ".smex-items"))
 (smex-initialize)
