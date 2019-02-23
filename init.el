@@ -18,6 +18,7 @@
 (require 'init-terraform)
 (require 'init-ansible)
 (require 'init-rust)
+(require 'init-markdown)
 
 (provide 'init)
 
@@ -36,7 +37,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (ansible yaml-mode terraform-mode projectile smex ido-completing-read+ flycheck rainbow-delimiters golden-ratio atom-one-dark-theme))))
+    (markdown-mode ansible yaml-mode terraform-mode projectile smex ido-completing-read+ flycheck rainbow-delimiters golden-ratio atom-one-dark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
