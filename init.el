@@ -19,6 +19,7 @@
 (require 'init-ansible)
 (require 'init-rust)
 (require 'init-markdown)
+(require 'init-golang)
 
 (provide 'init)
 
@@ -37,7 +38,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (markdown-mode ansible yaml-mode terraform-mode projectile smex ido-completing-read+ flycheck rainbow-delimiters golden-ratio atom-one-dark-theme))))
+    (company-go go-eldoc go-mode markdown-mode ansible yaml-mode terraform-mode projectile smex ido-completing-read+ flycheck rainbow-delimiters golden-ratio atom-one-dark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
