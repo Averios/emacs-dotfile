@@ -9,7 +9,8 @@
 (add-hook 'yaml-mode-hook #'company-mode)
 (add-hook 'yaml-mode-hook '(lambda ()
                              (ansible 1)
-                             (add-to-list 'company-backends 'company-ansible)))
+                             (set (make-local-variable 'company-backends) '(company-ansible))
+                             ))
 
 (provide 'init-ansible)
 
