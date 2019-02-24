@@ -6,6 +6,7 @@
 (require-package 'ido-vertical-mode)
 (require-package 'smex)
 (require-package 'projectile)
+(require-package 'ripgrep)
 
 (setq recentf-save-file (concat user-emacs-directory ".recentf"))
 (recentf-mode 1)
