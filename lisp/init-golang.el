@@ -12,9 +12,8 @@
                           (if (not (string-match "go" compile-command))   ; set compile command default
                               (set (make-local-variable 'compile-command)
                                    "go build -v && go test -v && go vet"))
+                          (define-key go-mode-map (kbd "M-.") 'godef-jump)
                           ))
 (add-hook 'go-mode-hook 'go-eldoc-setup)
-
-(define-key go-mode-map (kbd "M-.") 'godef-jump)
 
 (provide 'init-golang)
