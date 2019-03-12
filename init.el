@@ -21,6 +21,8 @@
 (require 'init-markdown)
 (require 'init-golang)
 
+(require-package 'magit)
+
 (provide 'init)
 
 (when (version<= "26.0.50" emacs-version )
@@ -38,7 +40,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (company-go go-eldoc go-mode markdown-mode ansible yaml-mode terraform-mode projectile smex ido-completing-read+ flycheck rainbow-delimiters golden-ratio atom-one-dark-theme))))
+    (magit company-go go-eldoc go-mode markdown-mode ansible yaml-mode terraform-mode projectile smex ido-completing-read+ flycheck rainbow-delimiters golden-ratio atom-one-dark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
