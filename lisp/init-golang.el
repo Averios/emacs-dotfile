@@ -11,7 +11,7 @@
                           (setq gofmt-command "goimports")                ; gofmt uses invokes goimports
                           (if (not (string-match "go" compile-command))   ; set compile command default
                               (set (make-local-variable 'compile-command)
-                                   "go build -v && go test -v && go vet"))
+                                   "vgo build -v && vgo test -v && vgo vet"))
                           (define-key go-mode-map (kbd "M-.") 'godef-jump)
                           ))
 (add-hook 'go-mode-hook 'go-eldoc-setup)
